@@ -6,6 +6,7 @@
   1. [Types](#types)
   2. [Declaring constants and variables](#declaring-constants-and-variables)
 2. [Functions](#functions)
+3. [Classes](#classes)
 
 ## **The Basics**
 
@@ -38,6 +39,8 @@ func functionName (parameterName : type) -> return_type {
 	
 }
 ```
+## **Classes**
+
 
 
 
@@ -47,5 +50,5 @@ David Marín,
 
 ## License
 
-CircleProgress.control is available under the MIT license. See the LICENSE file for more info.
+ObjectiveC_vs_Swift.doc is available under the MIT license. See the LICENSE file for more info.
 
