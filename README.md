@@ -41,8 +41,27 @@ func functionName (parameterName : type) -> return_type {
 ```
 ## **Classes**
 
+```swift
+class ClassName : superClass {
+	
+}
+```
 
+```objective-c
+// header_file.h
+@interface ClassName : superClass
 
+@end
+
+// implementation_file.m
+@interface ClassName ()
+
+@end
+
+@implementation ClassName
+
+@end
+```
 
 ## Author
 
