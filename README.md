@@ -5,8 +5,11 @@
 1. [The Basics](#the-basics)
   1. [Types](#types)
   2. [Declaring constants and variables](#declaring-constants-and-variables)
+  3. [Swift Documentation](#swift-documentation)
 2. [Functions](#functions)
 3. [Classes](#classes)
+4. [References](#references)
+
 
 ## **The Basics**
 
@@ -25,6 +28,22 @@
 | String |             |             |
 
 ### **Declaring constants and variables**
+
+### **Swift Documentation**
+
+```swift
+
+/**
+   Description
+
+   # Lists
+   You can apply *italic*, **bold**, or `code` inline styles.
+
+   - parameter parameterName: parameter name 
+   - returns: return value
+*/
+
+```
 
 ## **Functions**
 
@@ -62,6 +81,10 @@ class ClassName : superClass {
 
 @end
 ```
+
+## **References**
+
+* [Swift Documentation](http://nshipster.com/swift-documentation/)
 
 ## Author
 
