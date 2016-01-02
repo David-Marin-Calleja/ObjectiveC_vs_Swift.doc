@@ -8,7 +8,8 @@
   3. [Swift Documentation](#swift-documentation)
 2. [Functions](#functions)
 3. [Classes](#classes)
-4. [References](#references)
+4. [Testing](#testing)
+5. [References](#references)
 
 
 ## **The Basics**
@@ -81,6 +82,13 @@ class ClassName : superClass {
 
 @end
 ```
+
+## **Testing**
+
+| Swift                                          | Objective-C                                          | 
+| :--------------------------------------------: | :--------------------------------------------------: |
+| [Quick/Nimble](https://github.com/Quick/Quick) | [Specta/Expecta](https://github.com/specta/specta)   |
+|                                                | [Kiwi](https://github.com/kiwi-bdd/Kiwi)             |
 
 ## **References**
 
