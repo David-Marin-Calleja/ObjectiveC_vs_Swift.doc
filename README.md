@@ -9,7 +9,8 @@
 2. [Functions](#functions)
 3. [Classes](#classes)
 4. [Protocols](#protocols)
-5. [References](#references)
+5. [Extension - Categories](#extension-categories)
+6. [References](#references)
 
 
 ## **The Basics**
@@ -88,6 +89,7 @@ class ClassName : superClass {
 
 ```swift
 protocol ProtocolName {
+static func protocolMethod()
 }
 ```
 
@@ -109,6 +111,31 @@ protocol ProtocolName {
 }
 
 - (void)otherFileMethod {
+}
+
+@end
+```
+
+## **Extension - Categories**
+
+```swift
+extension ClassToExtend {
+func instanceClassName()
+}
+```
+
+```objective-c
+// ClassName+categoryName.h
+#import "ClassName.h"
+
+@interface ClassName (categoryName)
+-(void) instanceClassName();
+@end
+
+// ClassName+categoryName.m
+@implementation ClassName (categoryName)
+
+-(void) instanceClassName() {
 }
 
 @end
