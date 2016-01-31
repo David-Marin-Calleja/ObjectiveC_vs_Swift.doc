@@ -42,31 +42,38 @@
    # Lists
    You can apply *italic*, **bold**, or `code` inline styles.
 
-   - parameter parameterName: parameter name 
+   - parameter parameterName: parameter name
    - returns: return value
 */
 
+```
+
+Line separator code
+```swift
+// MARK: - DataSource
+// TODO:
+// FIXME
 ```
 
 ## **Functions**
 
 ```swift
 func functionName (parameterName : type) -> return_type {
-	
+
 }
 ```
 
 ```objective-c
 // file.h
 -(return_type) functionName: (type) parameterName {
-	
+
 }
 ```
 ## **Classes**
 
 ```swift
 class ClassName : superClass {
-	
+
 }
 ```
 
@@ -144,7 +151,7 @@ func instanceClassName()
 
 ## **Testing**
 
-| Swift                                          | Objective-C                                          | 
+| Swift                                          | Objective-C                                          |
 | :--------------------------------------------: | :--------------------------------------------------: |
 | [Quick/Nimble](https://github.com/Quick/Quick) | [Specta/Expecta](https://github.com/specta/specta)   |
 |                                                | [Kiwi](https://github.com/kiwi-bdd/Kiwi)             |
@@ -156,9 +163,8 @@ func instanceClassName()
 
 ## Author
 
-David Marín, 
+David Marín,
 
 ## License
 
 ObjectiveC_vs_Swift.doc is available under the MIT license. See the LICENSE file for more info.
-
