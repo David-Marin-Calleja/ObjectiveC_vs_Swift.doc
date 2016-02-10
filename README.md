@@ -11,7 +11,11 @@
 4. [Protocols](#protocols)
 5. [Extension - Categories](#extension-categories)
 6. [Testing](#testing)
-7. [References](#references)
+7. [Properties](#properties)
+  1. [Stored Properties](#stored-properties)
+  2. [Lazy Stored Properties](#lazy-stored-properties)
+  3. [Computed Properties](#computed-properties)
+8. [References](#references)
 
 
 ## **The Basics**
@@ -156,6 +160,37 @@ func instanceClassName()
 | [Quick/Nimble](https://github.com/Quick/Quick) | [Specta/Expecta](https://github.com/specta/specta)   |
 |                                                | [Kiwi](https://github.com/kiwi-bdd/Kiwi)             |
 
+
+## **Properties**
+
+### **Stored Properties**
+
+```swift
+struct MyStruct {
+  var variableStoredProperties: Int
+  let constantStoredProperties: Int
+}
+```
+
+### **Lazy Stored Properties**
+
+```swift
+struct MyStruct {
+  lazy var variableStoredProperties = String()
+}
+```
+
+### **Computed Properties**
+
+```swift
+struct MyStruct {
+  var variableComputedProperties : String {
+      get {
+          return "value"
+      }
+  }
+}
+```
 
 ## **References**
 
