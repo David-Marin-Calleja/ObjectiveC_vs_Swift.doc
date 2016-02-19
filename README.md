@@ -6,6 +6,7 @@
   1. [Types](#types)
   2. [Declaring constants and variables](#declaring-constants-and-variables)
   3. [Swift Documentation](#swift-documentation)
+  4. [The guard statement](#the-guard-state)
 2. [Functions](#functions)
 3. [Classes](#classes)
 4. [Protocols](#protocols)
@@ -57,6 +58,14 @@ Line separator code
 // MARK: - DataSource
 // TODO:
 // FIXME
+```
+
+### **The guard statement**
+
+```swift
+guard let x > 10 else {
+   print "error"
+}
 ```
 
 ## **Functions**
