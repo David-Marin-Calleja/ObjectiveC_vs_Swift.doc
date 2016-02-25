@@ -6,6 +6,7 @@
   1. [Types](#types)
   2. [Declaring constants and variables](#declaring-constants-and-variables)
   3. [Swift Documentation](#swift-documentation)
+  4. [Memory](#memory)
 2. [Functions](#functions)
 3. [Classes](#classes)
 4. [Protocols](#protocols)
@@ -32,7 +33,7 @@
 | Double |             |             |
 | Float  |             |             |
 | Bool   |             |             |
-| String |             |             |
+| String | NSString    | String      |
 
 ### **Declaring constants and variables**
 
@@ -58,6 +59,8 @@ Line separator code
 // TODO:
 // FIXME
 ```
+
+### **Memory**
 
 ## **Functions**
 
