@@ -24,17 +24,23 @@
 
 ### **Types**
 
-| Swift  | Objective-C | description |
-| ------ |:-----------:|:-----------:|
-| UInt8  |             |             |
-| UInt32 |             |             |
-| UInt64 |             |             |
-| Int    |             |             |
-| UInt   |             |             |
-| Double |             |             |
-| Float  |             |             |
-| Bool   |             |             |
-| String | NSString    | String      |
+| Swift  | Objective-C | description                                              |
+| ------ |:-----------:|:--------------------------------------------------------:|
+| UInt8  | uint8_t     | 0 ... 255                                                |
+| Int8   |             | -128 ... 127                                             |
+| UInt16 |             | 0 ... 65,535                                             |
+| Int16  |             | -32,768 ... 32,767                                       |
+| UInt32 | uint32_t    | 0 ... 4,294,967,295                                      |
+| Int32  |             | -2,147,483,648 ... 2,147,483,647                         |
+| UInt64 | uint64_t    | 0 ... 18,446,744,073,709,551,615                         |
+| Int64  |             | -9,223,372,036,854,775,808 ... 9,223,372,036,854,775,807 |
+| Int    | int         |                                                          |
+| UInt   |             |                                                          |
+| Double | double      |                                                          |
+| Float  | float       |                                                          |
+|        | long        |                                                          |
+| Bool   | BOOL        |                                                          |
+| String | NSString    | String                                                   |
 
 ### **Declaring constants and variables**
 
