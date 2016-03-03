@@ -5,11 +5,14 @@
 1. [The Basics](#the-basics)
   1. [Types](#types)
   2. [Declaring constants and variables](#declaring-constants-and-variables)
+  3. [Optional](#optional)
   3. [Swift Documentation](#swift-documentation)
   4. [Memory](#memory)
   5. [The guard statement](#the-guard-state)
 2. [Functions](#functions)
+3. [Closures](#closures)
 3. [Classes](#classes)
+  3.1. [Properties](#properties)
 4. [Protocols](#protocols)
 5. [Extension - Categories](#extension-categories)
 6. [Testing](#testing)
@@ -43,6 +46,11 @@
 | String | NSString    | String                                                   |
 
 ### **Declaring constants and variables**
+
+### **Optional**
+Optional variables and constants are defined using ? (question mark).
+
+
 
 ### **Swift Documentation**
 
@@ -91,6 +99,9 @@ func functionName (parameterName : type) -> return_type {
 
 }
 ```
+
+## **Closures**
+
 ## **Classes**
 
 ```swift
@@ -114,6 +125,8 @@ class ClassName : superClass {
 
 @end
 ```
+
+### **Properties**
 
 ## **Protocols**
 
@@ -213,6 +226,7 @@ struct MyStruct {
 ## **References**
 
 * [Swift Documentation](http://nshipster.com/swift-documentation/)
+* [The Swift Programming Language (Swift 2.1)](https://itunes.apple.com/es/book/swift-programming-language/id881256329?l=en&mt=11)
 
 ## Author
 
