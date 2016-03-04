@@ -4,23 +4,30 @@
 
 1. [The Basics](#the-basics)
   1. [Types](#types)
-  2. [Declaring constants and variables](#declaring-constants-and-variables)
-  3. [Optional](#optional)
-  3. [Swift Documentation](#swift-documentation)
-  4. [Memory](#memory)
-  5. [The guard statement](#the-guard-state)
-2. [Functions](#functions)
-3. [Closures](#closures)
-3. [Classes](#classes)
+  2. [Tuples](#tuples)
+  3. [Declaring constants and variables](#declaring-constants-and-variables)
+  4. [Optional](#optional)
+  5. [Swift Documentation](#swift-documentation)
+  6. [Memory](#memory)
+  7. [The guard statement](#the-guard-state)
+2. [Control flow](#control-flow)
+  1. [The if statement](#the-if-statement)
+  2. [The for loop](#the-for-loop)
+  3. [The while loop](#the-while-loop)
+  4. [The switch statement](#the-switch-statement)
+  5. [The guard statement](#the-guard-statement)
+3. [Functions](#functions)
+4. [Closures](#closures)
+5. [Classes](#classes)
   3.1. [Properties](#properties)
-4. [Protocols](#protocols)
-5. [Extension - Categories](#extension-categories)
-6. [Testing](#testing)
-7. [Properties](#properties)
+6. [Protocols](#protocols)
+7. [Extension - Categories](#extension-categories)
+8. [Testing](#testing)
+9. [Properties](#properties)
   1. [Stored Properties](#stored-properties)
   2. [Lazy Stored Properties](#lazy-stored-properties)
   3. [Computed Properties](#computed-properties)
-8. [References](#references)
+10. [References](#references)
 
 
 ## **The Basics**
@@ -44,6 +51,8 @@
 |        | long        |                                                          |
 | Bool   | BOOL        |                                                          |
 | String | NSString    | String                                                   |
+
+### **Tuples**
 
 ### **Declaring constants and variables**
 
@@ -84,6 +93,13 @@ guard let x > 10 else {
    print "error"
 }
 ```
+
+## **Control flow**
+### **The if statement**
+### **The for loop**
+### **The while loop**
+### **The switch statement**
+### **The guard statement**
 
 ## **Functions**
 
