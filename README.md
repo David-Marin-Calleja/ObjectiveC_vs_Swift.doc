@@ -5,11 +5,12 @@
 1. [The Basics](#the-basics)
   1. [Types](#types)
   2. [Tuples](#tuples)
-  3. [Declaring constants and variables](#declaring-constants-and-variables)
-  4. [Optional](#optional)
-  5. [Swift Documentation](#swift-documentation)
-  6. [Memory](#memory)
-  7. [The guard statement](#the-guard-state)
+  3. [Enumerations](#enumerations)
+  4. [Declaring constants and variables](#declaring-constants-and-variables)
+  5. [Optional](#optional)
+  6. [Swift Documentation](#swift-documentation)
+  7. [Memory](#memory)
+  8. [The guard statement](#the-guard-state)
 2. [Control flow](#control-flow)
   1. [The if statement](#the-if-statement)
   2. [The for loop](#the-for-loop)
@@ -22,12 +23,13 @@
   3.1. [Properties](#properties)
 6. [Protocols](#protocols)
 7. [Extension - Categories](#extension-categories)
-8. [Testing](#testing)
-9. [Properties](#properties)
+8. [Handling Errors](#handling-errors)
+9. [Testing](#testing)
+10. [Properties](#properties)
   1. [Stored Properties](#stored-properties)
   2. [Lazy Stored Properties](#lazy-stored-properties)
   3. [Computed Properties](#computed-properties)
-10. [References](#references)
+11. [References](#references)
 
 
 ## **The Basics**
@@ -53,6 +55,23 @@
 | String | NSString    | String                                                   |
 
 ### **Tuples**
+
+### **Enumerations**
+
+```swift
+enum Enumerations {
+  case value1
+  case value2
+  case value3, value4
+
+  func method() -> String {
+    return "return value"
+  }
+}
+```
+
+```objective-c
+```
 
 ### **Declaring constants and variables**
 
@@ -198,6 +217,26 @@ func instanceClassName()
 }
 
 @end
+```
+
+## **Handling Errors**
+
+```swift
+do {
+  try methodWithThrows()
+} catch {
+  print("error")
+}
+```
+
+```objective-c
+@try {
+  [methodWithThrows];
+} @catch (NSException *e) {
+  NSLog(@"error");
+} @finally {
+
+}
 ```
 
 ## **Testing**
