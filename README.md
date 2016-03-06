@@ -20,7 +20,8 @@
 3. [Functions](#functions)
 4. [Closures](#closures)
 5. [Classes](#classes)
-  3.1. [Properties](#properties)
+  1. [Class prefix](#class-prefix)
+  2. [Properties](#properties)
 6. [Protocols](#protocols)
 7. [Extension - Categories](#extension-categories)
 8. [Handling Errors](#handling-errors)
@@ -160,6 +161,8 @@ class ClassName : superClass {
 
 @end
 ```
+### **Class prefix**
+You do not need class prefixes in Swift, because classes are namespaced to the module in which they live. Reference: [stackoverflow](http://stackoverflow.com/questions/24214863/swift-class-prefix-needed),[developer.apple.com](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/Migration.html)
 
 ### **Properties**
 
