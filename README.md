@@ -4,9 +4,10 @@
 
 1. [The Basics](#the-basics)
   1. [Types](#types)
-  2. [Tuples](#tuples)
-  3. [Enumerations](#enumerations)
-  4. [Declaring constants and variables](#declaring-constants-and-variables)
+  2. [The typeof statement](#the-typeof-statement)
+  3. [Tuples](#tuples)
+  4. [Enumerations](#enumerations)
+  5. [Declaring constants and variables](#declaring-constants-and-variables)
   5. [Optional](#optional)
   6. [Swift Documentation](#swift-documentation)
   7. [Memory](#memory)
@@ -55,10 +56,21 @@
 | Bool   | BOOL        |                                                          |
 | String | NSString    | String                                                   |
 
+### **The typeof statement**
+```objective-c
+__weak typeof(self) this = self;
+```
+
+```swift
+var myClosure = {
+    [unowned self] in
+    print(self.description)
+}
+```
+
 ### **Tuples**
 
 ### **Enumerations**
-
 ```swift
 enum Enumerations {
   case value1
