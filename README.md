@@ -129,6 +129,15 @@ guard let x > 10 else {
 ## **Control flow**
 ### **The if statement**
 ### **The for loop**
+
+```swift
+for i in 0..5 {
+}
+
+for i in 0..<5 {
+}
+```
+
 ### **The while loop**
 ### **The switch statement**
 ### **The guard statement**
