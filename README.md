@@ -148,7 +148,12 @@ for i in 0..<5 {
 ## **Functions**
 
 ```swift
-func functionName (parameterName : type) -> return_type {
+func functionName (parameterName : String) -> String {
+
+}
+
+// variable number of arguments
+func functionName2 (parameterName : String...) -> String {
 
 }
 ```
