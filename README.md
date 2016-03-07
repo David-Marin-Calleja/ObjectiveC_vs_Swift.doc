@@ -131,7 +131,10 @@ guard let x > 10 else {
 ### **The for loop**
 
 ```swift
-for i in 0..5 {
+for i in 0...5 {
+}
+
+for _ in 0...5 {
 }
 
 for i in 0..<5 {
