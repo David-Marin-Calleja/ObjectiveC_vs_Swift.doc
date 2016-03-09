@@ -12,6 +12,7 @@
   6. [Swift Documentation](#swift-documentation)
   7. [Memory](#memory)
   8. [The guard statement](#the-guard-state)
+  9. [Variable property attributes or Modifiers in iOS](#variable-property-attributes-or-modifiers-in-ios)
 2. [Control flow](#control-flow)
   1. [The if statement](#the-if-statement)
   2. [The for loop](#the-for-loop)
@@ -125,6 +126,23 @@ guard let x > 10 else {
    print "error"
 }
 ```
+
+### **Variable property attributes or Modifiers in iOS**
+
+[original link](http://rdcworld-iphone.blogspot.com.es/2012/12/variable-property-attributes-or.html?m=1)
+
+| Modifier   | Swift       | Objective-C                                              |
+| ---------- |:-----------:|:--------------------------------------------------------:|
+| atomic
+| nonatomic
+| strong=retain
+| weak= unsafe_unretained
+| retain
+| assign
+| unsafe_unretained
+| copy
+| readonly
+| readwrite
 
 ## **Control flow**
 ### **The if statement**
