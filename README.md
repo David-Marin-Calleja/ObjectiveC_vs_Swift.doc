@@ -71,6 +71,11 @@ var myClosure = {
 
 ### **Tuples**
 
+```swift
+let city = (91, "Madrid")
+let city2 = (prefixPhone: 91, name: "Madrid")
+```
+
 ### **Enumerations**
 ```swift
 enum Enumerations {
