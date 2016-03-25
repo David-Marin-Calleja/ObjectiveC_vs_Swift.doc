@@ -23,8 +23,10 @@
 4. [Closures](#closures)
 5. [Classes](#classes)
   1. [Class prefix](#class-prefix)
-  2. [Properties](#properties)
-  3. [Generic](#generic)
+  2. [Initializers](#Initializers)
+  3. [Modifiers for methods](#modifiers-for-methods)
+  4. [Properties](#properties)
+  5. [Generic](#generic)
 6. [Protocols](#protocols)
   1. [Associated types](#associated-types)
 7. [Extension - Categories](#extension-categories)
@@ -226,6 +228,29 @@ class ClassName : superClass {
 ```
 ### **Class prefix**
 You do not need class prefixes in Swift, because classes are namespaced to the module in which they live. Reference: [stackoverflow](http://stackoverflow.com/questions/24214863/swift-class-prefix-needed),[developer.apple.com](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/Migration.html)
+
+### **Initializers**
+
+```swift
+class TheClass {
+  init() {
+
+  }
+}
+```
+
+```objective-c
+// file.h
+
+// file.m
+```
+
+### **Modifiers for methods**
+
+| Modifier | Swift                                     | Objective-C
+| -------- | :---------------------------------------: | :----------:
+| static   | subclasses can override class methods     |
+| class    | subclasses cannot override static methods |
 
 ### **Properties**
 
