@@ -94,6 +94,13 @@ enum Enumerations {
 
 ### **Declaring constants and variables**
 
+| Modifier |Swift|Objective-c|
+|----------|-----|-----------|
+| private  | details of a class hidden from the rest of the app
+| internal | details of a framework hidden from the client app
+| public   |
+[Reference: Access Control and protected](https://developer.apple.com/swift/blog/?id=11)
+
 ### **Optional**
 Optional variables and constants are defined using ? (question mark).
 
