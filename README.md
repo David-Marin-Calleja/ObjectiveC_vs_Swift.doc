@@ -314,10 +314,16 @@ func instanceClassName()
 ## **Handling Errors**
 
 ```swift
-do {
-  try methodWithThrows()
-} catch {
-  print("error")
+func methodA() throws -> String {
+  return "swift"
+}
+
+func methodB() {
+  do {
+    try methodA()
+  } catch {
+    print("error")
+  }
 }
 ```
 
