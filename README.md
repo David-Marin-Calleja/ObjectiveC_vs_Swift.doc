@@ -24,7 +24,9 @@
 5. [Classes](#classes)
   1. [Class prefix](#class-prefix)
   2. [Properties](#properties)
+  3. [Generic](#generic)
 6. [Protocols](#protocols)
+  1. [Associated types](#associated-types)
 7. [Extension - Categories](#extension-categories)
 8. [Handling Errors](#handling-errors)
 9. [Testing](#testing)
@@ -39,23 +41,25 @@
 
 ### **Types**
 
-| Swift  | Objective-C | description                                              |
-| ------ |:-----------:|:--------------------------------------------------------:|
-| UInt8  | uint8_t     | 0 ... 255                                                |
-| Int8   |             | -128 ... 127                                             |
-| UInt16 |             | 0 ... 65,535                                             |
-| Int16  |             | -32,768 ... 32,767                                       |
-| UInt32 | uint32_t    | 0 ... 4,294,967,295                                      |
-| Int32  |             | -2,147,483,648 ... 2,147,483,647                         |
-| UInt64 | uint64_t    | 0 ... 18,446,744,073,709,551,615                         |
-| Int64  |             | -9,223,372,036,854,775,808 ... 9,223,372,036,854,775,807 |
-| Int    | int         |                                                          |
-| UInt   |             |                                                          |
-| Double | double      |                                                          |
-| Float  | float       |                                                          |
-|        | long        |                                                          |
-| Bool   | BOOL        |                                                          |
-| String | NSString    | String                                                   |
+| Swift     | Objective-C | description                                              |
+| --------- |:-----------:|:--------------------------------------------------------:|
+| UInt8     | uint8_t     | 0 ... 255                                                |
+| Int8      |             | -128 ... 127                                             |
+| UInt16    |             | 0 ... 65,535                                             |
+| Int16     |             | -32,768 ... 32,767                                       |
+| UInt32    | uint32_t    | 0 ... 4,294,967,295                                      |
+| Int32     |             | -2,147,483,648 ... 2,147,483,647                         |
+| UInt64    | uint64_t    | 0 ... 18,446,744,073,709,551,615                         |
+| Int64     |             | -9,223,372,036,854,775,808 ... 9,223,372,036,854,775,807 |
+| Int       | int         |                                                          |
+| UInt      |             |                                                          |
+| Double    | double      |                                                          |
+| Float     | float       |                                                          |
+|           | long        |                                                          |
+| Bool      | BOOL        |                                                          |
+| String    | NSString    | String                                                   |
+| Any       |             | Any can be utilized to all other types too, including struct and enum
+| AnyObject | id          | AnyObject can only represent class type
 
 ### **The typeof statement**
 ```objective-c
@@ -225,6 +229,18 @@ You do not need class prefixes in Swift, because classes are namespaced to the m
 
 ### **Properties**
 
+### **Generic**
+
+```swift
+class Entity {
+
+}
+
+class ClassName <T: Entity> : superClass {
+
+}
+```
+
 ## **Protocols**
 
 ```swift
@@ -255,6 +271,20 @@ static func protocolMethod()
 
 @end
 ```
+### **Associated types**
+Protocols in Swift cannot be defined generically using type parameters. Instead, protocols can define what are known as associated types using the typealias keyword.
+
+```swift
+// A protocol for things that can accept food.
+protocol FoodEatingType {
+  typealias Food
+
+  var isSatiated : Bool { get }
+  func feed(food: Food)
+}
+```
+
+[reference](http://austinzheng.com/2015/09/29/swift-generics-pt-2/)
 
 ## **Extension - Categories**
 
