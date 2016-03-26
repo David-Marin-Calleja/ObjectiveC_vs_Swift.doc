@@ -24,8 +24,12 @@
 5. [Classes](#classes)
   1. [Class prefix](#class-prefix)
   2. [Initializers](#Initializers)
+    1. [Designated initializers](#designated-initializers)
+    2. [Convenience initializers](#convenience-initializers)
   3. [Modifiers for methods](#modifiers-for-methods)
   4. [Properties](#properties)
+    1. [Stored Property](#stored-property)
+    2. [Computed Property](#computed-property)
   5. [Generic](#generic)
 6. [Protocols](#protocols)
   1. [Associated types](#associated-types)
@@ -245,6 +249,23 @@ class TheClass {
 // file.m
 ```
 
+#### **Designated initializers**
+```swift
+class TheClass {
+  init() {
+
+  }
+}
+```
+#### **Convenience initializers**
+```swift
+class TheClass {
+  convenience init() {
+
+  }
+}
+```
+
 ### **Modifiers for methods**
 
 | Modifier | Swift                                     | Objective-C
@@ -253,6 +274,23 @@ class TheClass {
 | class    | subclasses cannot override static methods |
 
 ### **Properties**
+
+#### **Stored Property**
+```swift
+let pi = 3.1415
+```
+
+#### **Computed Property**
+```swift
+let name: String {
+  get {
+    return "value"
+  }
+  set(value) {
+
+  }
+}
+```
 
 ### **Generic**
 
