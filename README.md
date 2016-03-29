@@ -4,15 +4,16 @@
 
 1. [The Basics](#the-basics)
   1. [Types](#types)
-  2. [The typeof statement](#the-typeof-statement)
-  3. [Tuples](#tuples)
-  4. [Enumerations](#enumerations)
-  5. [Declaring constants and variables](#declaring-constants-and-variables)
-  5. [Optional](#optional)
-  6. [Swift Documentation](#swift-documentation)
-  7. [Memory](#memory)
-  8. [The guard statement](#the-guard-state)
-  9. [Variable property attributes or Modifiers in iOS](#variable-property-attributes-or-modifiers-in-ios)
+  2. [Dictionary](#dictionary)
+  3. [The typeof statement](#the-typeof-statement)
+  4. [Tuples](#tuples)
+  5. [Enumerations](#enumerations)
+  6. [Declaring constants and variables](#declaring-constants-and-variables)
+  7. [Optional](#optional)
+  8. [Swift Documentation](#swift-documentation)
+  9. [Memory](#memory)
+  10. [The guard statement](#the-guard-state)
+  11. [Variable property attributes or Modifiers in iOS](#variable-property-attributes-or-modifiers-in-ios)
 2. [Control flow](#control-flow)
   1. [The if statement](#the-if-statement)
   2. [The for loop](#the-for-loop)
@@ -66,6 +67,12 @@
 | String    | NSString    | String                                                   |
 | Any       |             | Any can be utilized to all other types too, including struct and enum
 | AnyObject | id          | AnyObject can only represent class type
+
+### **Dictionary**
+
+```swift
+var myDictionary = [String : String] = [:]
+```
 
 ### **The typeof statement**
 ```objective-c
