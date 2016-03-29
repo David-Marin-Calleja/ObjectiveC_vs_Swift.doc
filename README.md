@@ -71,9 +71,10 @@
 
 #### **Converting types**
 
-| Convert       | Swift                    | Objective-C
-| ------------- |:------------------------:| -----------
-| String to Int | let intValue = Int("79") |
+| Convert       | Swift                           | Objective-C
+| ------------- |:-------------------------------:| -----------
+| String to Int | let intValue = Int("79")        |
+| Int to String | let stringValue = "\(intValue)" |
 
 ### **Dictionary**
 
