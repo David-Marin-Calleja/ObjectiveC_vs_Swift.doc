@@ -141,14 +141,6 @@ Line separator code
 
 ### **Memory**
 
-### **The guard statement**
-
-```swift
-guard let x > 10 else {
-   print "error"
-}
-```
-
 ### **Variable property attributes or Modifiers in iOS**
 
 [original link](http://rdcworld-iphone.blogspot.com.es/2012/12/variable-property-attributes-or.html?m=1)
@@ -183,7 +175,13 @@ for i in 0..<5 {
 
 ### **The while loop**
 ### **The switch statement**
+
 ### **The guard statement**
+```swift
+guard let x > 10 else {
+   print "error"
+}
+```
 
 ## **Functions**
 
