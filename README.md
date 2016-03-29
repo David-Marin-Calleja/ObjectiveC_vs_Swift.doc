@@ -4,6 +4,7 @@
 
 1. [The Basics](#the-basics)
   1. [Types](#types)
+    1. [Converting types](#converting-types)
   2. [Dictionary](#dictionary)
   3. [The typeof statement](#the-typeof-statement)
   4. [Tuples](#tuples)
@@ -67,6 +68,12 @@
 | String    | NSString    | String                                                   |
 | Any       |             | Any can be utilized to all other types too, including struct and enum
 | AnyObject | id          | AnyObject can only represent class type
+
+#### **Converting types**
+
+| Convert       | Swift                    | Objective-C
+| ------------- |:------------------------:| -----------
+| String to Int | let intValue = Int("79") |
 
 ### **Dictionary**
 
