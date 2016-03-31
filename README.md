@@ -262,6 +262,17 @@ class TheClass {
 // file.m
 ```
 
+Starting in Xcode 6.1 beta 1, Swift initializers can be declared to return an optional:
+```swift
+class TheClass {
+  init?(value:Int) {
+    if value == 0 {
+      return nil
+    }
+  }
+}
+```
+
 #### **Designated initializers**
 ```swift
 class TheClass {
