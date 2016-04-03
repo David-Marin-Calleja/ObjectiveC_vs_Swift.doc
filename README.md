@@ -22,6 +22,7 @@
   4. [The switch statement](#the-switch-statement)
   5. [The guard statement](#the-guard-statement)
 3. [Functions](#functions)
+  1. [Selector](#selector)
 4. [Closures](#closures)
 5. [Classes](#classes)
   1. [Class prefix](#class-prefix)
@@ -216,6 +217,25 @@ func functionName2 (parameterName : String...) -> String {
 -(return_type) functionName: (type) parameterName {
 
 }
+```
+
+### **Selector**
+
+```swift
+func callMethod {
+
+}
+
+#selector(callMethod)
+```
+
+```objective-c
+// file.m
+- (void) callMehod {
+
+}
+
+@selector(callMethod:)
 ```
 
 ## **Closures**
