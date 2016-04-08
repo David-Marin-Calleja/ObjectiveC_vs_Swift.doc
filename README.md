@@ -316,6 +316,7 @@ class TheClass {
 | -------- | :---------------------------------------: | :----------:
 | static   | subclasses can override class methods     |
 | class    | subclasses cannot override static methods |
+| override | |
 
 ### **Properties**
 
