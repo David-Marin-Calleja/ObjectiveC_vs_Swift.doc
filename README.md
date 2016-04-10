@@ -5,6 +5,7 @@
 1. [The Basics](#the-basics)
   1. [Types](#types)
     1. [Converting types](#converting-types)
+    2. [Cast](#cast)
   2. [Dictionary](#dictionary)
   3. [The typeof statement](#the-typeof-statement)
   4. [Tuples](#tuples)
@@ -76,6 +77,17 @@
 | ------------- |:-------------------------------:| -----------
 | String to Int | let intValue = Int("79")        |
 | Int to String | let stringValue = "\(intValue)" |
+
+#### **Cast**
+
+| Convert                                         |                          | Objective-C
+| ----------------------------------------------- |:------------------------:| -----------
+| explicit cast                                   | vehicle = car as Vehicle |
+| check the “is-a sentence”                       | car is Car               |
+| only performs the cast, if the cast is possible | as?                      |
+| you are very sure that the cast is possible     | as!                      |
+
+[Type casting in swift](http://www.thomashanning.com/type-casting-in-swift/)
 
 ### **Dictionary**
 
@@ -319,6 +331,19 @@ class TheClass {
 | override | |
 
 ### **Properties**
+
+```objective-c
+// ExampleClass.h
+
+// ExampleClass.m
+@interface ExampleClass ()
+@property (nonatomic, strong) String *exampleName;
+@end
+
+@implementation VTDAppDependencies
+  // ...
+@end
+```
 
 #### **Stored Property**
 ```swift
