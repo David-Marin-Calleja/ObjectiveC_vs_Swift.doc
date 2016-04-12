@@ -80,7 +80,7 @@
 
 #### **Cast**
 
-| Convert                                         |                          | Objective-C
+| Convert                                         | Swift                    | Objective-C
 | ----------------------------------------------- |:------------------------:| -----------
 | explicit cast                                   | vehicle = car as Vehicle |
 | check the “is-a sentence”                       | car is Car               |
@@ -188,6 +188,13 @@ Line separator code
 
 ## **Control flow**
 ### **The if statement**
+
+```swift
+if foo == 10 {
+  print("ok")
+}
+```
+
 ### **The for loop**
 
 ```swift
