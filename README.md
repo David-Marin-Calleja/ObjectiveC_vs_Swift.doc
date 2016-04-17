@@ -209,6 +209,11 @@ for i in 0..<5 {
 ```
 
 ### **The while loop**
+
+```swift
+
+```
+
 ### **The switch statement**
 
 ### **The guard statement**
@@ -258,6 +263,22 @@ func callMethod {
 ```
 
 ## **Closures**
+
+```swift
+let foo = {
+  (bar: String) -> String in
+  print("foo closures \(bar)")
+  return "foo"
+}
+```
+
+```objective-c
+// file.m
+NSString *(^foo)(NSString *) = ^(NSString bar) {
+  NSLog(@"foo closures %@", bar);
+  return [NSString stringWithFormat:@"foo"];
+}
+```
 
 ## **Classes**
 
