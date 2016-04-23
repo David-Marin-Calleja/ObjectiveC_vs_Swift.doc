@@ -226,19 +226,24 @@ guard let x > 10 else {
 ## **Functions**
 
 ```swift
-func functionName (parameterName : String) -> String {
+func foo (parameterName : String) -> String {
 
 }
 
 // variable number of arguments
-func functionName2 (parameterName : String...) -> String {
+func foo2 (parameterName : String...) -> String {
+
+}
+
+// If you want to modify a parameter’s value, define that parameter as an in-out parameter instead
+func foo3 (inout a:Int) {
 
 }
 ```
 
 ```objective-c
 // file.h
--(return_type) functionName: (type) parameterName {
+-(return_type) foo: (type) parameterName {
 
 }
 ```
