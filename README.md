@@ -6,6 +6,7 @@
   1. [Types](#types)
     1. [Converting types](#converting-types)
     2. [Cast](#cast)
+    3. [Var & constants](#var-&-constants)
   2. [Dictionary](#dictionary)
   3. [The typeof statement](#the-typeof-statement)
   4. [Tuples](#tuples)
@@ -66,10 +67,18 @@
 | Double    | double      |                                                          |
 | Float     | float       |                                                          |
 |           | long        |                                                          |
-| Bool      | BOOL        |                                                          |
+| Bool      | BOOL        | true or false in Swift.                                  |
 | String    | NSString    | String                                                   |
+| Character |             |
 | Any       |             | Any can be utilized to all other types too, including struct and enum
 | AnyObject | id          | AnyObject can only represent class type
+
+dynamicType for display type
+```swift
+var fooString = "value"
+print(fooString.dynamicType)
+// "String\n"
+```
 
 #### **Converting types**
 
@@ -88,6 +97,16 @@
 | you are very sure that the cast is possible     | as!                      |
 
 [Type casting in swift](http://www.thomashanning.com/type-casting-in-swift/)
+
+#### **Var & constants**
+
+```swift
+// var
+var fooBool : Bool = true
+
+// constants
+
+```
 
 ### **Dictionary**
 
@@ -190,8 +209,27 @@ Line separator code
 ### **The if statement**
 
 ```swift
+let foo = 10
 if foo == 10 {
   print("ok")
+}
+
+let poo = true
+// == true is not necessary
+if poo {
+
+}
+
+// ! not operator
+if !poo {
+
+} else {
+
+}
+
+// && AND
+if foo == 10 && poo {
+
 }
 ```
 
