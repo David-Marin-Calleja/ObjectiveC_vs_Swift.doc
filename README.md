@@ -361,8 +361,19 @@ class TheClass {
 
 ```objective-c
 // file.h
+@interface Foo : NSObject
+-(instancetype) initWithName: (NSString* )name;
+@end
 
 // file.m
+@implementation Foo
+-(instancetype) initWithName: (NSString* )name {
+  if (self = [super init]) {
+    self._name = name;
+  }
+  return self;
+}
+@end
 ```
 
 Starting in Xcode 6.1 beta 1, Swift initializers can be declared to return an optional:
