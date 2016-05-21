@@ -45,6 +45,7 @@
   1. [Stored Properties](#stored-properties)
   2. [Lazy Stored Properties](#lazy-stored-properties)
   3. [Computed Properties](#computed-properties)
+  4. [IBAction and IBOutlet](#ibaction-and-iboutlet)
 11. [References](#references)
 
 
@@ -590,6 +591,13 @@ struct MyStruct {
   }
 }
 ```
+
+### **IBAction and IBOutlet**
+
+| Swift                                          | Objective-C                                                                        |
+| :--------------------------------------------: | :--------------------------------------------------------------------------------: |
+| @IBOutlet var tabBarButtons: Array<UIButton>!  | @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *tabBarButtons; |
+| @IBOutlet var tabBarButton: UIButton!          | @property (nonatomic, strong) IBOutlet UIButton *tabBarButton;
 
 ## **References**
 
