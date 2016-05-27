@@ -9,7 +9,7 @@ html
   body
     a (:target _blank)
       :href https://github.com/David-Marin-Calleja/swift-is-like-objective-c
-      img#fork-me (:src http://nilhcem.github.io/swift-is-like-kotlin/fork-me.png)
+      img#fork-me (:src http://david-marin-calleja.github.io/swift-is-like-objective-c/fork-me.png)
     #note
       b
         = "Swift is like Objective-C"
