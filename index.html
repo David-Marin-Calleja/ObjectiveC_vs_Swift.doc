@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>Swift is like Objective-C</title><meta charset="utf-8"><link rel="stylesheet" href="css/style.css"></head><body><a target="_blank" href="https://github.com/David-Marin-Calleja/swift-is-like-objective-c"><img id="fork-me" src="http://david-marin-calleja.github.io/swift-is-like-objective-c/fork-me.png"></a><div id="note"><b>Swift is like Objective-C</b><br>Shamefully forked from <a href="https://github.com/Nilhcem/swift-is-like-kotlin" target="_blank">Swift is like Kotlin</a></div><div class="section"><div class="title">BasicsBasics</div><div class="case"><div class="name">Converting types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>// String to Int
+<!DOCTYPE html><html><head><title>Swift is like Objective-C</title><meta charset="utf-8"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="highlight/styles/zenburn.css"><script src="highlight/highlight.pack.js"></script></head><body><a target="_blank" href="https://github.com/David-Marin-Calleja/swift-is-like-objective-c"><img id="fork-me" src="http://david-marin-calleja.github.io/swift-is-like-objective-c/fork-me.png"></a><div id="note"><b>Swift is like Objective-C</b><br>Shamefully forked from <a href="https://github.com/Nilhcem/swift-is-like-kotlin" target="_blank">Swift is like Kotlin</a></div><div class="section"><div class="title">The Basics</div><div class="case"><div class="name">Types</div><div class="pair"></div></div><div class="case"><div class="name">Var & Constant</div><div class="pair"></div></div><div class="case"><div class="name">Converting types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// String to Int
 let intValue = Int("79")
 
 // Int to String
@@ -8,7 +8,63 @@ let stringValue = "\(intValue)"
 
 // Int to String
 [@(79) stringValue];
-</code></pre></div></div></div></div><div class="section"><div class="title">flowflow</div><div class="case"><div class="name">The if statement</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let foo = 10
+</code></pre></div></div></div><div class="case"><div class="name">Properties</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// String to Int
+let intValue = Int("79")
+
+// Int to String
+let stringValue = "\(intValue)"
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// String to Int
+[@"79" intValue];
+
+// Int to String
+[@(79) stringValue];
+</code></pre></div></div></div><div class="case"><div class="name">Comments</div><div class="pair"><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// one comment line
+
+/*
+ * multiple comment line
+ */
+
+#pragma mark - Properties
+</code></pre></div></div></div></div><div class="section"><div class="title">Control flow</div><div class="case"><div class="name">The if statement</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let foo = 10
+if foo == 10 {
+  print("ok")
+}
+
+// == true is not necessary
+let poo = true
+if poo {
+
+}
+
+// ! not operator
+if !poo {
+
+} else {
+
+}
+
+// && AND
+if foo == 10 && poo {
+
+}
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>int value = 79;
+if (value == 79) {
+    NSLog(@"assert");
+}
+</code></pre></div></div></div></div><div class="section"><div class="title">Classes and Objects</div><div class="case"><div class="name">Class and initializer</div><div class="pair"></div></div><div class="case"><div class="name">Properties</div><div class="pair"><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>@property (nonatomic) NSString *foo;
+@property (strong)    NSString *foo2;
+@property (weak)      NSString *foo3;
+@property (readonly)  NSString *foo4;
+</code></pre></div></div></div><div class="case"><div class="name">Methods</div><div class="pair"></div></div><div class="case"><div class="name">Private</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code></code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>#import "ClassAndPrivate.h"
+
+@interface ClassAndPrivate ()
+  @property (strong, nonatomic) NSString *privateProperty;
+@end
+
+@implementation ClassAndPrivate
+
+@end
+</code></pre></div></div></div></div><div class="section"><div class="title">Communication</div><div class="case"><div class="name">Target/Action</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let foo = 10
 if foo == 10 {
   print("ok")
 }
