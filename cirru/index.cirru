@@ -39,6 +39,12 @@ html
         .card (.lang Objective-C) $ pre.code $ code (@insert ../code/the-if-statement.m)
 
     .section
+      .title "Functions"
+
+    .section
+      .title "Closures"
+
+    .section
       .title "Classes and Objects"
       .case (.name "Class and initializer") $ .pair
       .case (.name "Properties") $ .pair
@@ -47,6 +53,18 @@ html
       .case (.name "Private") $ .pair
         .card (.lang Swift) $ pre.code $ code (@insert ../code/ClassAndPrivate.swift)
         .card (.lang Objective-C) $ pre.code $ code (@insert ../code/ClassAndPrivate.m)
+
+    .section
+      .title "Protocols"
+
+    .section
+      .title "Extension - Categories"
+
+    .section
+      .title "Handling Errors"
+
+    .section
+      .title "Testing"
 
     .section
       .title "Communication"
