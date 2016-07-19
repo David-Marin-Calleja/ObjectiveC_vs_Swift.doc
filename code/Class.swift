@@ -1,11 +1,19 @@
-class foo {
-  let myConstant = 5
+// Basic
+import UIKit
 
-  init() {
-    
-  }
+class myClass: NSObject {
+    var myProperty:String
+    let MYCONSTANT = "constant"
 
-  func myMethod() -> String {
-    return "string value"
-  }
+    override init() {
+        self.myProperty = ""
+    }
+
+    func myMethod(myParam: String) -> String {
+        return "in myMethod with param \(myParam)"
+    }
+
+    func myOtherMethod() {
+        print("in myOtherMethod")
+    }
 }
