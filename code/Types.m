@@ -3,7 +3,9 @@
 @implementation MyListOfTypes
 
 -(void) listOfTypes {
-    int       intValue      = 3;
+    id        anyValue      = nil;
+    Int       intValue      = 79;
+    Double    doubleValue   = 7.9
     NSNumber  *integerValue = @79;
     NSString  *stringValue  = @"hello";
 }
