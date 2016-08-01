@@ -1,9 +1,14 @@
 // Basic form
+void (^foo)() = ^void() {
+    NSLog(@"Simple");
+};
 
-
-[self.dataManager completionBlock: ^(NSArray* todoItems) {
-                    NSLog(@"block");
-                  }];
+// Complete form
+NSString* (^foo)(NSString *) = ^(NSString *name) {
+    return [NSString stringWithFormat:@"Complete %@", name];
+};
+NSLog(@" value %@ ",foo(@""));
+foo(@"Example");
 
 // Avoid retain cycle
 @property (nonatomic, strong) void (^block)();
