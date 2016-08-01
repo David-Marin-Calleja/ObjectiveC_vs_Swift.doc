@@ -15,6 +15,11 @@ extern NSString * const MYCONSTANT;
 @implementation MyClass
 NSString * const MYCONSTANT = @"constant";
 
+// is a class method, run before any instances of the class are created and
+// before other class methods are run
++(void) initialize {
+}
+
 // designated initializer
 -(instancetype) init {
     if (self = [super init]) {

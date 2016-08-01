@@ -15,11 +15,19 @@ class myClass: NSObject {
       self.myProperty = ""
     }
 
-    func myMethod(myParam: String) -> String {
-      return "in myMethod with param \(myParam)"
+    deinit {
     }
 
-    func myOtherMethod() {
-      print("in myOtherMethod")
+    func myFirstMethod() {
+        print("in myOtherMethod")
     }
+
+    func mySecordMethod(value: String) -> String {
+        return " param \(value)"
+    }
+
+    func myThirdMethod(first value1: String, second value2:String) -> String {
+        return " param one \(value1) and two \(value2)"
+    }
+    
 }
