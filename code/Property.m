@@ -1,3 +1,4 @@
+// Property.h
 @property (nonatomic) NSString *foo;
 @property (strong)    NSString *foo2;
 @property (weak)      NSString *foo3;
@@ -7,3 +8,9 @@
 @property (nullable)  NSString *foo5;
 @property (nonnull)   NSString *foo6;
 @property (null_unspecified) NSString *foo7;
+
+
+// Properyt.m
+@implementation Property : NSOBject
+
+@end
