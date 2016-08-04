@@ -3,10 +3,16 @@ struct Foo {
   let bar: String
 }
 
-// Initializers attributes 
+// Initializers attributes
 struct Foo {
   var bar: String
   mutating func Foo(foobar theBar:String) {
     this.bar = theBar
   }
+
+  // Method of class
+  static func myMethod() {
+      print("static method")
+  }
+
 }
