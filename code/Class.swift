@@ -11,8 +11,24 @@ class myClass: NSObject {
       print("static function")
     }
 
+    class func myMethodClass() {
+        print("method class")
+    }
+
     override init() {
       self.myProperty = ""
+    }
+
+    // Invocation call:
+    // let foo = myClass("ABC")
+    override init(_ value:String) {
+      self.myProperty = value
+    }
+
+    // Invocation call:
+    // let foo = myClass(value: "ABC")
+    override init(value: String) {
+      self.myProperty = value
     }
 
     deinit {
@@ -29,5 +45,5 @@ class myClass: NSObject {
     func myThirdMethod(first value1: String, second value2:String) -> String {
         return " param one \(value1) and two \(value2)"
     }
-    
+
 }
