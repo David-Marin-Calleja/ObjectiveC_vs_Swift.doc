@@ -8,6 +8,7 @@ class MyListOfTypes {
     let floatValue  : Float
     let dateValue   : NSDate
     let stringValue : String
+    let character   : Character
 
     // Optionals types
 
