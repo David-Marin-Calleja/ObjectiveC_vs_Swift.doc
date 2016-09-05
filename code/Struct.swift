@@ -16,3 +16,8 @@ struct Foo {
   }
 
 }
+
+// Generic Data Structure
+struct Foo <T> {
+  var baz : T
+}
