@@ -18,6 +18,6 @@ struct Foo {
 }
 
 // Generic Data Structure
-struct Foo <T> {
-  var baz : T
+struct Foo <Element> {
+  var baz : Element
 }
