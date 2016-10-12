@@ -1,30 +1,200 @@
-<!DOCTYPE html><html><head><title>Swift is like Objective-C</title><meta charset="utf-8"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="highlight/styles/zenburn.css"><script src="highlight/highlight.pack.js"></script></head><body><a target="_blank" href="https://github.com/David-Marin-Calleja/swift-is-like-objective-c"><img id="fork-me" src="http://david-marin-calleja.github.io/swift-is-like-objective-c/fork-me.png"></a><div id="note"><b>Swift is like Objective-C</b><br>Shamefully forked from <a href="https://github.com/Nilhcem/swift-is-like-kotlin" target="_blank">Swift is like Kotlin</a></div><div class="section"><div class="title">The Basics</div><div class="case"><div class="name">Types</div><div class="pair"></div></div><div class="case"><div class="name">Var & Constant</div><div class="pair"></div></div><div class="case"><div class="name">Converting types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// String to Int
+<!DOCTYPE html><html><head><title>Swift is like Objective-C</title><meta charset="utf-8"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="highlight/styles/zenburn.css"><script src="highlight/highlight.pack.js"></script></head><body><a target="_blank" href="https://github.com/David-Marin-Calleja/swift-is-like-objective-c"><img id="fork-me" src="http://david-marin-calleja.github.io/swift-is-like-objective-c/fork-me.png"></a><div id="note"><b>Swift is like Objective-C</b><br>Shamefully forked from <a href="https://github.com/Nilhcem/swift-is-like-kotlin" target="_blank">Swift is like Kotlin</a></div><div class="section"><div class="title">The Basics</div><div class="case"><div class="name">Comments</div><div class="pair"><div class="card"><div class="lang">Objective-C</div><pre class="code"><code></code></pre></div></div></div><div class="case"><div class="name">Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">class MyListOfTypes {
+
+  func listOfTypes () {
+    let any         : AnyObject
+    let boolvalue   : Bool = true // false
+    let intValue    : Int
+    let doubleValue : Double
+    let floatValue  : Float
+    let dateValue   : NSDate
+    let stringValue : String
+    let character   : Character
+
+    // Optionals types
+
+  }
+
+}
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>#import <Foundation/Foundation.h>
+
+@implementation MyListOfTypes
+
+-(void) listOfTypes {
+    Int       intValue      = 79;
+    Double    doubleValue   = 7.9
+    NSNumber  *integerValue = @79;
+    NSString  *stringValue  = @"hello";
+
+    // Optionals types
+}
+
+@end
+</code></pre></div></div></div><div class="case"><div class="name">array Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// Initializing empty arrays
+let foo = Array<String>()
+// More often
+let bar = [String]()
+// Array literal syntax
+let inmutableArray = [@"foo", @"bar"]
+
+var mutableArray = inmutableArray
+
+// Add values
+mutableArray.append("baz")
+mutableArray.insert("foo", atIndex: 1)
+
+// Array concatenation
+let baz = foo + bar
+
+// Remove values
+mutableArray.removeAtIndex(1)
+
+//
+print(" \(bar[1]) ")
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>NSArray *inmutableArray = @[@"foo", @"bar"];
+
+NSMutableArray *mutableArray = [inmutableArray mutableCopy];
+
+[mutableArray addObject: @"pub"];
+
+[mutableArray insertObject: @"pun"
+                   atIndex: 0]
+</code></pre></div></div></div><div class="case"><div class="name">nil null Types</div><div class="pair"><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>nil -> null pointer to Objective-C object
+
+NIL -> null pointer to Objective-C class
+
+null -> null pointer to primitive type or absence of data
+
+
+notes: http://stackoverflow.com/questions/5908936/difference-between-nil-nil-and-null-in-objective-c
+</code></pre></div></div></div><div class="case"><div class="name">Dictionary Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// Initializing empty Dictionary
+var mutableDictionary = [Int:String]()
+
+let inmutableDictionary = ["ES": "Spain", "US":"United-States"]
+
+
+// Removing
+mutableDictionary["key"]=nil
+
+// Updating
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>NSDictionary *inmutableDictionary = [NSDictionary dictionaryWithObjectAndKeys:
+                                                  @"Spain", @"ES", nil]
+
+NSDictionary *compactDictionary = @{ @"one": @"1"};
+
+// fast enumeration
+for (NSString *key in compactDictionary) {
+  NSLog(@"key: %@ value: %@", key, [compactDictionary objectForKey: key]);
+}
+</code></pre></div></div></div><div class="case"><div class="name">Optionals Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">let listValues = ["key1" : "value1",
+                  "key2" : "value2",
+                  "key3" : "value3"]
+
+// Declaring optinals with Question
+let optionalType:String?
+
+// Unwrapping optionals with If-let
+if let value = listValues["key1"] {
+  print("exist")
+} else {
+  print("no exist")
+}
+
+// Implicitly unwrapped Optionals
+let implicity:String! =  "value"
+print("\(implicity)")
+
+// Casting
+</code></pre></div></div></div><div class="case"><div class="name">String Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// concatenation
+let foo = "string"
+let bar = "this is a" + foo + "."
+
+// interpolation
+let foo = "25"
+let bar = "20 + 5 = \(foo) and 2 + 2 = \(2 + 2)"
+
+// String is an array de characters
+let foo:String="value"
+foo.characters
+</code></pre></div></div></div><div class="case"><div class="name">Converting Types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// String to Int
 let intValue = Int("79")
 
 // Int to String
-let stringValue = "\(intValue)"
+let stringValue = "\(79)"
 </code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// String to Int
 [@"79" intValue];
 
 // Int to String
 [@(79) stringValue];
+</code></pre></div></div></div><div class="case"><div class="name">Generics</div><div class="pair"><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>@interface Foo
+
+@property(nonatomic, strong) NSArray<NSString *> *listOfString;
+
+@property(nonatomic, strong) NSArray<__kindof UIView *> *listOfViews;
+
+@end
+</code></pre></div></div></div><div class="case"><div class="name">Var & Constant</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// constant and inmutable value
+let foo = "constant value"
+
+// variable and mutable value
+var bar = "variable value"
+</code></pre></div></div></div><div class="case"><div class="name">Converting types</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// String to Int
+let intValue = Int("79")
+
+// Int to String
+let stringValue = "\(79)"
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// String to Int
+[@"79" intValue];
+
+// Int to String
+[@(79) stringValue];
+</code></pre></div></div></div><div class="case"><div class="name">Enumeration</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">enum continents {
+  case Africa
+  case America
+  case Antarctica
+  case Asia
+  case Australia
+  case Europe
+}
+
+enum ranking : Int {
+  case First
+  case Second
+}
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// https://developer.apple.com/library/ios/releasenotes/ObjectiveC/ModernizationObjC/AdoptingModernObjective-C/AdoptingModernObjective-C.html#//apple_ref/doc/uid/TP40014150-CH1-SW6
+
+// Modern
+// The NS_ENUM macro helps define both the name and type of the enumeration
+typedef NS_ENUM(NSInteger, ViewPosition) {
+  PositionLeft,
+  PositionRight,
+  PositionCenter
+}
+// Use the NS_OPTIONS macro to define options, a set of bitmasked values that
+// may be combined together:
+typedef NS_OPTIONS(NSUInteger, ViewElement) {
+  ViewNone       = 0,
+  ViewWindow     = 1 << 0,
+  ViewNavigation = 2 << 1
+}
 </code></pre></div></div></div><div class="case"><div class="name">Properties</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code class="swift">// String to Int
 let intValue = Int("79")
 
 // Int to String
-let stringValue = "\(intValue)"
+let stringValue = "\(79)"
 </code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// String to Int
 [@"79" intValue];
 
 // Int to String
 [@(79) stringValue];
-</code></pre></div></div></div><div class="case"><div class="name">Comments</div><div class="pair"><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// one comment line
+</code></pre></div></div></div><div class="case"><div class="name">Functions</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>// simple
+func simpleFunction() {
 
-/*
- * multiple comment line
- */
+}
 
-#pragma mark - Properties
+// with params and return value
+func functionName(param: String) -> String {
+  return "return string value " + param
+}
 </code></pre></div></div></div></div><div class="section"><div class="title">Control flow</div><div class="case"><div class="name">The if statement</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let foo = 10
 if foo == 10 {
   print("ok")
@@ -51,10 +221,267 @@ if foo == 10 && poo {
 if (value == 79) {
     NSLog(@"assert");
 }
-</code></pre></div></div></div></div><div class="section"><div class="title">Classes and Objects</div><div class="case"><div class="name">Class and initializer</div><div class="pair"></div></div><div class="case"><div class="name">Properties</div><div class="pair"><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>@property (nonatomic) NSString *foo;
+</code></pre></div></div></div><div class="case"><div class="name">The for statement</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>for index in 1...5 {
+  print("\(index)")
+}
+
+for index in 1..<5 {
+  print("\(index)")
+}
+
+for _ in 1...5 {
+  print(".")
+}
+
+// terate over an array with a for having value element
+let itemsArray = [2, 4, 6, 8]
+for value in itemsArray {
+  print("\(value)")
+}
+
+// Iterate over an array with a for having both index and value elements
+let itemsArray = [2, 4, 6, 8]
+for (index, value) in itemsArray.enumerate() {
+  print("index \(index) and value \(value)")
+}
+
+let itemsDictionary = ["key1": 2, "key3": 4, "key5": 5]
+for (key, value) in itemsDictionary {
+    print("\(key): \(value)")
+}
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>//
+for (int i = 0; i < 10; i++) {
+  NSLog("%d", i);
+}
+
+// Fast-iteration
+NSString *foo = @[@"bar", @2.3, 4]
+for (id each in foo) {
+  NSLog(@"%@", each);
+}
+</code></pre></div></div></div><div class="case"><div class="name">The range statement</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let foo:Range<Int>=1...4
+</code></pre></div></div></div><div class="case"><div class="name">The switch statement</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let foo = "bar"
+switch foo {
+  case "bar":
+    print("bar")
+
+  case "baz":
+    print("baz")
+
+  case let x where x.hasSuffix("pre-")
+    print("value: \(x)")
+
+  default:
+    print("default")
+}
+</code></pre></div></div></div><div class="case"><div class="name">The while statement</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var index = 5
+while index >= 0 {
+  print("\(index)")
+  index = index - 1
+}
+
+index = 5
+repeat {
+  print("\(index)")
+  index = index - 1
+} while index >= 0
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>int count = 5;
+while (count > 0) {
+    NSLog(@"%d", count);
+    count--;
+}
+
+count = 5;
+do {
+    NSLog(@"%d", count);
+    count--;
+} while (count > 0);
+</code></pre></div></div></div><div class="case"><div class="name">The guard statement</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var foo = 10
+guard foo > 10 else {
+  print("error condition")
+}
+</code></pre></div></div></div></div><div class="section"><div class="title">.card,.lang,Objective-C,pre.code,code,@insert,../code/the-block-closure-statement.m<div class="card"><div class="lang">Swift</div><pre class="code"><code>// Basic form
+let foo = {
+    () -> Void in
+    print ("simple")
+}
+
+// Complete form
+let foo = {
+    (name: String) -> String in
+    return "Complete \(name)"
+}
+// Invocation
+foo("example")
+
+// Closure into a function
+func foobar(handler:(String)->Void) {
+    handler("value")
+}
+
+// Closure inline
+func foobar(handler: {
+  print("inline")
+})
+
+// Shorthand syntax
+func baz(handler: () -> String) {
+    print(" text: \(handler()) ")
+}
+baz({return "string"})
+
+// Shorthand syntax with parameters
+func baz(handler: ( qux: String ) -> String) {
+
+    let quxx = "string"
+    print(" text: \(handler(qux: quxx)) ")
+}
+baz({return "Type \($0)"})
+
+// Shorthand with parameter name
+// weak reference to self
+let foo = {
+    [unowned self] (name: String) -> Bool in
+    if self.listUser.contains(key) {
+        return true
+    } else {
+        return false
+    }
+}
+
+// Shorthand syntax without parameters
+let foo = {
+  (String, String) -> Void in
+  print("\($0) \($1)")
+}
+
+// Shorthand complete form
+let foo : (String, String) -> String = {
+    return "Complete \($0) + \($1)"
+}
+foo("a", "b")
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// Basic form
+void (^foo)() = ^void() {
+    NSLog(@"Simple");
+};
+
+// Complete form
+NSString* (^foo)(NSString *) = ^(NSString *name) {
+    return [NSString stringWithFormat:@"Complete %@", name];
+};
+NSLog(@" value %@ ",foo(@""));
+foo(@"Example");
+
+// Avoid retain cycle
+@property (nonatomic, strong) void (^block)();
+__weak typeof(self) welf = self;
+self.block = ^ {
+     [weakSelf doSecond];
+ };
+</code></pre></div></div></div><div class="section"><div class="title">Classes and Objects</div><div class="case"><div class="name">Class and initializer</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>// Basic
+import UIKit
+
+class myClass: NSObject {
+    var        myProperty:String
+    let        MYCONSTANT     = "constant"
+    static var staticVariable = "value"
+
+    // Static method
+    static func baz () {
+      print("static function")
+    }
+
+    class func myMethodClass() {
+        print("method class")
+    }
+
+    override init() {
+      self.myProperty = ""
+    }
+
+    // Invocation call:
+    // let foo = myClass("ABC")
+    override init(_ value:String) {
+      self.myProperty = value
+    }
+
+    // Invocation call:
+    // let foo = myClass(value: "ABC")
+    override init(value: String) {
+      self.myProperty = value
+    }
+
+    deinit {
+    }
+
+    func myFirstMethod() {
+        print("in myOtherMethod")
+    }
+
+    func mySecordMethod(value: String) -> String {
+        return " param \(value)"
+    }
+
+    func myThirdMethod(first value1: String, second value2:String) -> String {
+        return " param one \(value1) and two \(value2)"
+    }
+
+}
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// Basic
+#import <Foundation/Foundation.h>
+
+@interface MyClass : NSObject
+#define EASY_CONSTANT @"easy_constant"
+extern NSString * const MYCONSTANT;
+
+@property(nonatomic, strong) NSString *myProperty;
+
+-(NSString *) myMethod:(NSString *)myParam;
+-(void) myOtherMethod;
+@end
+
+
+@implementation MyClass
+NSString * const MYCONSTANT = @"constant";
+
+// is a class method, run before any instances of the class are created and
+// before other class methods are run
++(void) initialize {
+}
+
+// designated initializer
+-(instancetype) init {
+    if (self = [super init]) {
+        self.myProperty = @"";
+    }
+    return self;
+}
+
+-(NSString *) myMethod:(NSString *)myParam {
+    return [NSString stringWithFormat:@"in myMethod with param %@", myParam];
+}
+
+-(void) myOtherMethod {
+    NSLog(@"in myOtherMethod");
+}
+@end
+</code></pre></div></div></div><div class="case"><div class="name">Properties</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>var foo: String? { get set }
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// Property.h
+@property (nonatomic) NSString *foo;
 @property (strong)    NSString *foo2;
 @property (weak)      NSString *foo3;
 @property (readonly)  NSString *foo4;
+
+// https://medium.com/the-traveled-ios-developers-guide/objective-c-in-2015-3cb7dab3690c#.457shxv37
+@property (nullable)  NSString *foo5;
+@property (nonnull)   NSString *foo6;
+@property (null_unspecified) NSString *foo7;
+
+
+// Properyt.m
+@implementation Property : NSOBject
+
+@end
 </code></pre></div></div></div><div class="case"><div class="name">Methods</div><div class="pair"></div></div><div class="case"><div class="name">Private</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code></code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>#import "ClassAndPrivate.h"
 
 @interface ClassAndPrivate ()
@@ -64,7 +491,58 @@ if (value == 79) {
 @implementation ClassAndPrivate
 
 @end
-</code></pre></div></div></div></div><div class="section"><div class="title">Communication</div><div class="case"><div class="name">Target/Action</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let foo = 10
+</code></pre></div></div></div><div class="case"><div class="name">Protocols</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>// Syntax
+protocol foo {
+  func baz()
+}
+// Protocol in Class
+class bar : foo {
+  func baz() {
+    print("func baz")
+  }
+}
+
+// Protocol with static function
+protocol foo {
+  static func baz()
+}
+
+// You can limit protocol adoption to class types (and not structures or enumerations)
+// by adding the class keyword
+protocol foo: class {
+
+}
+</code></pre></div></div></div><div class="case"><div class="name">Struct</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>// Basic
+struct Foo {
+  let bar: String
+}
+
+// Initializers attributes
+struct Foo {
+  var bar: String
+  mutating func Foo(foobar theBar:String) {
+    this.bar = theBar
+  }
+
+  // Method of class
+  static func myMethod() {
+      print("static method")
+  }
+
+}
+
+// Generic Data Structure
+struct Foo <Element> {
+  var baz : Element
+}
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code>// Basic
+typedef struct {
+    __unsafe_unretained NSString *bar;
+} Foo;
+</code></pre></div></div></div></div><div class="section"><div class="title">Protocols</div></div><div class="section"><div class="title">Extension - Categories</div></div><div class="section"><div class="title">Handling Errors</div><div class="case"><div class="name">The try catch statement</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>do {
+
+} catch
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code></code></pre></div></div></div></div><div class="section"><div class="title">Communication</div><div class="case"><div class="name">Target/Action</div><div class="pair"><div class="card"><div class="lang">Swift</div><pre class="code"><code>let foo = 10
 if foo == 10 {
   print("ok")
 }
@@ -90,4 +568,19 @@ if foo == 10 && poo {
 if (value == 79) {
     NSLog(@"assert");
 }
-</code></pre></div></div></div></div></body></html>
+</code></pre></div></div></div></div><div class="section"><div class="title">.card,.lang,Objective-C,pre.code,code,@insert,../code/GCD.m<div class="card"><div class="lang">Objective-C</div><pre class="code"><code>dispatch_queue_t myCustomQueue;
+myCustomQueue = dispatch_queue_create("com.foo.MyCustomQueue", NULL);
+
+dispatch_sync(myCustomQueue, ^{
+  NSLog("into dispatch_sync");
+});
+
+dispatch_async(myCustomQueue, ^{
+  NSLog("into dispatch_async");
+});
+
+// queue with system-defined global concurrent and default quality of service 
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+  NSLog("into dispatch_async");
+});
+</code></pre></div><div class="card"><div class="lang">Objective-C</div><pre class="code"><code></code></pre></div></div></div><div class="section"><div class="title">Testing</div></div></body></html>
