@@ -25,8 +25,8 @@ html
       .case (.name "Comments") $ .pair
         .card (.lang Objective-C) $ pre.code $ code (@insert ../code/Comments.m)
       .case (.name "Types") $ .pair
-        .card (.lang Swift) $ pre.code $ code (:class swift) (@insert ../code/type.swift)
-        .card (.lang Objective-C) $ pre.code $ code (@insert ../code/type.m)
+        .card (.lang Swift) $ pre.code $ code (:class swift) (@insert ../code/types.swift)
+        .card (.lang Objective-C) $ pre.code $ code (@insert ../code/types.m)
       .case (.name "array Types") $ .pair
         .card (.lang Swift) $ pre.code $ code (:class swift) (@insert ../code/array-type.swift)
         .card (.lang Objective-C) $ pre.code $ code (@insert ../code/array-type.m)
@@ -41,7 +41,7 @@ html
         .card (.lang Swift) $ pre.code $ code (:class swift) (@insert ../code/string-type.swift)
       .case (.name "Converting Types") $ .pair
         .card (.lang Swift) $ pre.code $ code (:class swift) (@insert ../code/converting-types.swift)
-        .card (.lang Objective-C) $ pre.code $ code (@insert ../code/converting-type.m)
+        .card (.lang Objective-C) $ pre.code $ code (@insert ../code/converting-types.m)
       .case (.name "Generics") $ .pair
         .card (.lang Objective-C) $ pre.code $ code (@insert ../code/generics.m)
       .case (.name "Var & Constant") $ .pair
