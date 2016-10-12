@@ -36,6 +36,17 @@ func baz(handler: ( qux: String ) -> String) {
 }
 baz({return "Type \($0)"})
 
+// Shorthand with parameter name
+// weak reference to self
+let foo = {
+    [unowned self] (name: String) -> Bool in
+    if self.listUser.contains(key) {
+        return true
+    } else {
+        return false
+    }
+}
+
 // Shorthand syntax without parameters
 let foo = {
   (String, String) -> Void in
