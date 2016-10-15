@@ -2,6 +2,9 @@
 #import <Foundation/Foundation.h>
 
 @interface MyClass : NSObject
+{
+  double privateValue;
+}
 #define EASY_CONSTANT @"easy_constant"
 extern NSString * const MYCONSTANT;
 
